@@ -1,0 +1,16 @@
+// Common button styles
+.btn {
+   padding: 10px;
+   background-color: var(--color-secondary) ;
+   border: var(--color-secondary);
+   color: var(--color-primary-text);
+   font-weight: bold;
+   height: 50px;
+   width: 200px;
+  }
+
+  // Button active state (when clicked or focused)
+  .btn:active {
+    transform: scale(0.98);
+  }
+  
