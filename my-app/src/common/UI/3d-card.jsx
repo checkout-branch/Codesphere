@@ -1,7 +1,7 @@
 import  { useRef, useState, useEffect } from "react";
-import { useScroll, useTransform, motion } from "framer-motion";
+import { useScroll, useTransform } from "framer-motion";
 import React from 'react'
-// eslint-disable-next-line react/prop-types
+
 export const ContainerScroll = ({ titleComponent, children }) => {
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -50,7 +50,7 @@ export const ContainerScroll = ({ titleComponent, children }) => {
   );
 };
 
-// eslint-disable-next-line react/prop-types
+
 export const Header = ({ translate, titleComponent }) => {
   return (
     <motion.div
@@ -64,7 +64,7 @@ export const Header = ({ translate, titleComponent }) => {
   );
 };
 
-// eslint-disable-next-line react/prop-types
+
 export const Card = ({ rotate, scale, children }) => {
   return (
     <motion.div

@@ -1,15 +1,16 @@
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable react/prop-types */
+
 import  {  useRef, useState } from "react";
-import { motion, useScroll, useTransform, useSpring } from "framer-motion";
+import {  useScroll, useTransform, useSpring } from "framer-motion";
 import { Link } from "react-router-dom"; // Use react-router for routing
-import imgg from '../../assets/react.svg'
+
 // import axios from "axios";
 // import { MainImageAPI } from "../API/API";
 import React from 'react'
 
 export const HeroParallax = () => {
- 
+
+ console.log(setProducts);
+
 const [products,setProducts] =useState([ {
   "id": 1,
   "title": "Cursor",
@@ -45,7 +46,7 @@ const [products,setProducts] =useState([ {
   "title": "Cursor",
   "link": "https://cursor.so",
   "thumbnail": "https://cdn.shopify.com/s/files/1/0533/2089/files/img-url-filter.jpg?v=1515074624"
-},,
+},
 {
   "id": 7,
   "title": "Cursor",
@@ -224,7 +225,7 @@ const Header = () => {
   );
 };
 
-// eslint-disable-next-line react/prop-types
+
 const ProductCard = ({ product, translate }) => {
   return (
     <motion.div
@@ -234,19 +235,19 @@ const ProductCard = ({ product, translate }) => {
       whileHover={{
         y: -20,
       }}
-      // eslint-disable-next-line react/prop-types
+
       key={product.title}
       className="group/product h-96 w-[30rem] relative flex-shrink-0"
     >
       <Link
-        // eslint-disable-next-line react/prop-types
+
         to={product.link}
         className="block group-hover/product:shadow-2xl"
       >
         <img
-          // eslint-disable-next-line react/prop-types
+         
           src={product.thumbnail}
-          // eslint-disable-next-line react/prop-types
+     
           alt={product.title}
           className="object-cover object-left-top absolute h-full w-full inset-0"
         />

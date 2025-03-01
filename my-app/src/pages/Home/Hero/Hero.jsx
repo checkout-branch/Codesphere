@@ -13,9 +13,9 @@ const Hero = () => {
     return (
         <div className=''>
 
-<div className='bg-gradient-to-t from-[#363372] via-[#2d295c] via-[#1b1945] to-[#17153B]'>
+<div className='bg-gradient-to-t from-[#363372] via-[#2d295c] via-[#1b1945] min-h-screen to-[#17153B]'>
 <ContainerScroll 
- data-aos="zoom-in-up"
+
         titleComponent={
           <>
             <h1 className="text-4xl font-semibold  dark:text-white text-white">
@@ -40,15 +40,15 @@ const Hero = () => {
       </ContainerScroll >
 </div>
 
-<div className='bg-gradient-to-t from-[#17153B] via-[#1b1945] via-[#2d295c] to-[#363372]'>
+<div className='bg-gradient-to-t from-[#17153B] via-[#1b1945] via-[#2d295c] to-[#363372] min-h-screen'>
 <HeroParallax /> 
 </div>
 
-<div className='bg-gradient-to-t from-[#010102] via-[#0c0b20] via-[#0f0e27] to-[#17153B] h-screen flex justify-center items-center'>
+<div className='bg-gradient-to-t from-[#010102] via-[#0c0b20] via-[#0f0e27] to-[#17153B]  min-h-screenflex justify-center items-center'>
 <CardHoverEffect/>
     
 </div>
-<div className='bg-gradient-to-t from-[#17153B] via-[#0f0e27] via-[#0c0b20] to-[#010102] h-screen flex justify-center items-center'>
+<div className='bg-gradient-to-t from-[#17153B] via-[#0f0e27] via-[#0c0b20] to-[#010102]  min-h-screen flex justify-center items-center'>
 
     <BentoGridDemo/>
 </div>
